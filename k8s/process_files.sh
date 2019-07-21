@@ -17,7 +17,7 @@ PROJECT_NAME=$1
 APP_NAME=$2
 IMAGE=$3
 WORK_DIR=$4
-TIMESTAMP=$5
+TIMESTAMP=$6
 
 main(){
 find $WORK_DIR -name *.yml -type f -exec sed -i.bak1 's#__PROJECT_NAME__#'$PROJECT_NAME'#' {} \;
